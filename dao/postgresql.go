@@ -24,10 +24,10 @@ func OpenConnection() *sql.DB {
 		panic(err)
 	}
 
-	//err = db.Ping()
-	//if err != nil {
-	//	panic(err)
-	//}
+	err = db.Ping()
+	if err != nil {
+		panic(err)
+	}
 
 	return db
 }
